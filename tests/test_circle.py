@@ -1,6 +1,3 @@
-
-from src.circle import Circle
-
 def test_circle_positive(radius):
         r = Rectangle(radius, side_b)
         assert r.name == 'Rectangle'
@@ -8,9 +5,9 @@ def test_circle_positive(radius):
         assert r.get_perimeter() == perimeter
 
 @pytest.mark.parametrize('radius,
-                         [    (-10),
-                              (10),
-                              (0),
+                         [    -10,
+                              10,
+                              0,
                          ])
 def test_rectangle_negative(side_a, side_b):
         with pytest.raises(ValueError):
