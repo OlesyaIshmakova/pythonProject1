@@ -1,0 +1,8 @@
+{
+  "tests/test_exam.py": true,
+  "tests/test_rectangle.py": true,
+  "tests/test_square.py": true,
+  "tests/test_trangle.py": true,
+  "tests/test_circle.py": true,
+  "tests/test_triangle.py": true
+}

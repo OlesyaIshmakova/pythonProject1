@@ -1,0 +1,5 @@
+idea/
+test-task/
+ven/
+venv/
+.pytest_cache/
