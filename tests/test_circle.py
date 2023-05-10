@@ -1,9 +1,8 @@
 import pytest
-from src.rectangle import Rectangle
-
+from src.circle import Circle
 def test_rectangle_positive(side_a, side_b, area, perimeter):
         r = Rectangle(side_a, side_b)
-        assert r.name == 'Rectangle'
+        assert r.name == 'Circle'
         assert r.get_area() == area
         assert r.get_perimeter() == perimeter
 

@@ -4,6 +4,4 @@ class Circle:
             raise ValueError(f'Expected radius circle > 0, got {radius}')
         self.radius = radius
         self.name  = 'Circle'
-        # self.area = side_a * side_b
-        # self.perimeter = 2 * (side_a + side_b)
-#
+        self.area = 2 * 3.14 * radius * radius

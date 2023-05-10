@@ -1,5 +1,5 @@
 import math
-from figure import Figure
+from src.figure import Figure
 
 class Triangle(Figure):
     def __init__(self, a_side: int, b_side: int, c_side: int):
@@ -16,8 +16,8 @@ class Triangle(Figure):
         return self.a_side + self.b_side + self.c_side
     @staticmethod
     def check_if_can_create_triangle(a_side: int, b_side: int, c_side: int):
-    if not (a_side > 0 and b_side > 0 and c_side > 0):
-        raise ValueError(f'Sides must be greater than 0. got: {a_side}, {b_side}, {c_side}')
+        if not (a_side > 0 and b_side > 0 and c_side > 0):
+            raise ValueError(f'Sides must be greater than 0. got: {a_side}, {b_side}, {c_side}')
 
     if not (a_side + b_side > c_side and a_side + c_side > b_side and c_side + b_side > a_side):
-        raise ValueError(f'Unable to create a triangle with sides: {a_side}, {b_side}, {c_side} ')
+        raise ValueError(f'Unable to create a triangle with sides: {a_side}, {b_side}, {c_side}')
